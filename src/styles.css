@@ -1,0 +1,263 @@
+/*Fonts*/
+
+
+/*font-family: 'Roboto-mono', sans-serif;*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 144px 420px;
+    gap: 10px;
+    position: relative;
+    background: #EBECF1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    gap: 16px;
+    width: 600px;
+    height: 718px;
+    background: #FFFFFF;
+    border-radius: 4px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+h1 {
+    /* To Do Application */
+    width: 327px;
+    height: 42px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+    color: #1B1C25;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+
+/* Field */
+
+.input-block {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0px;
+    gap: 8px;
+    width: 552px;
+    height: 48px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.field {
+    /* Rectangle 5 */
+    box-sizing: border-box;
+    width: 496px;
+    height: 48px;
+    background: #FFFFFF;
+    border: 1px solid #1B1C25;
+    border-radius: 4px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+}
+
+#add-item {
+    /* Auto layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    width: 48px;
+    height: 48px;
+    background: #206A5D;
+    border-radius: 4px;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.plus {
+    /* Text */
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.list {
+    overflow: scroll;
+}
+
+.list::-webkit-scrollbar {
+    display: none;
+}
+
+.list-item {
+    /* Auto layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 8px 12px 8px 0px;
+    gap: 8px;
+    width: 552px;
+    height: 40px;
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+}
+
+.item-undone {
+    /* Rectangle 7 */
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: #EBECF1;
+    background-color: #EBECF1;
+    background-size: 100%;
+    border-radius: 4px;
+    border: 2px solid black;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.item-content {
+    /* Clean my room */
+    width: 476px;
+    height: 24px;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    color: #000000;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+    /* Truncate */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.item-content:hover {
+    overflow: visible;
+    white-space: normal;
+    height: auto;
+}
+
+.delete-item {
+    width: 24px;
+    height: 24px;
+    background: #DB6969;
+    border-radius: 4px;
+    /* Inside auto layout */
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+
+/* TO DELETE */
+
+
+/* .checkbox-button {
+    width: 24px;
+    height: 24px;
+    border-radius: 4px;
+    border: 1px solid black;
+    background-color: #EBECF1;
+    cursor: pointer;
+}
+
+.list-item.active .checkbox-button {
+    background-color: #1F4068;
+    border: none;
+}  */
+
+.list-item.active .item-undone {
+    /* Rectangle 7 */
+    width: 24px;
+    height: 24px;
+    background: #1F4068;
+    border-radius: 4px;
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.list-item.active .item-content {
+    /* Finish my homework */
+    width: 476px;
+    height: 24px;
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-decoration-line: line-through;
+    color: #000000;
+    /* Inside auto layout */
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+}
